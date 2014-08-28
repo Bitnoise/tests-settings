@@ -16,5 +16,7 @@
             <property name="maximum" description="The variable length reporting threshold" value="25"/>
         </properties>
     </rule>
-    <rule ref="rulesets/unusedcode.xml" />
+    <rule ref="rulesets/unusedcode.xml" >
+        <exclude name="UnusedFormalParameter" />
+    </rule>
 </ruleset>
