@@ -7,7 +7,7 @@
     </rule>
     <rule ref="rulesets/naming.xml/ShortVariable">
         <properties>
-            <property name="exceptions" value="id,qb" />
+            <property name="exceptions" value="id,qb,ep" />
         </properties>
     </rule>
     <rule ref="rulesets/unusedcode.xml" />
