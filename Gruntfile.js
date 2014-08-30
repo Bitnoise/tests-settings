@@ -9,7 +9,9 @@ module.exports = function(grunt) {
             options: {
                 jshintrc: 'tests-settings/.jshintrc'
             },
-            bundle: ['src/**/*.js', '*.json', 'Gruntfile.js']
+            bundle: {
+                src: ['src/**/*.js', '!**/vendor/**/*.js', '*.json', 'Gruntfile.js']
+            }
         },
 
         csslint: {
@@ -17,7 +19,7 @@ module.exports = function(grunt) {
                 csslintrc: 'tests-settings/.csslintrc',
             },
             bundle: {
-                src: ['src/**/*.css']
+                src: ['src/**/*.css', '!**/vendor/**/*.css']
             }
         },
 
