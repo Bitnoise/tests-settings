@@ -1,5 +1,6 @@
 {
     "name": "bitnoise-tests-settings",
+    "description": "common package.json file for bundle testing",
     "version": "2.0.0-dev",
     "repository": {
         "type": "git",
