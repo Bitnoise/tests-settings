@@ -1,0 +1,26 @@
+{
+    "name": "bitnoise/tests-settings",
+    "description": "Repo with common settings/scripts for bundle testing",
+    "keywords": [ "bitnoise", "testing"],
+    "homepage": "https://github.com/bitnoise/tests-settings",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Bitnoise Team",
+            "homepage": "http://www.bitnoi.se/",
+            "email": "labs@bitnoi.se"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "~2.0.0",
+        "fabpot/php-cs-fixer": "~0.5.0",
+        "phpmd/phpmd": "~2.0.0",
+        "sebastian/phpcpd": "~2.0.0",
+        "asm89/twig-lint": "~1.0.1"
+    }
+}
