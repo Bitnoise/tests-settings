@@ -69,6 +69,15 @@ module.exports = function(grunt) {
             }
         },
 
+        phpunit: {
+            options: {
+                configuration: 'tests-settings/phpunit.xml'
+            }
+            bundle: {
+                dir: ''
+            }
+        },
+
         exec: {
           twig_lint: 'vendor/bin/twig-lint lint src/ --ansi'
         }
@@ -85,6 +94,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-exec');
 
     // Default task.
-    grunt.registerTask('test', ['jshint', 'csslint', 'phpcsfixer', 'phpmd', 'phpcpd', 'phpcs', 'exec:twig_lint']);
+    grunt.registerTask('lint', ['jshint', 'csslint', 'exec:twig_lint']);
+    grunt.registerTask('cs', ['phpcsfixer', 'phpcs', 'phpmd', 'phpcpd']);
+    grunt.registerTask('test', ['phpunit', 'lint', 'cs']);
     grunt.registerTask('default', ['test']);
 };
