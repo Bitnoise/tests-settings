@@ -91,6 +91,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-phpcs');
     grunt.loadNpmTasks('grunt-phpmd');
     grunt.loadNpmTasks('grunt-phpcpd');
+    grunt.loadNpmTasks('grunt-phpunit');
     grunt.loadNpmTasks('grunt-exec');
 
     // Default task.
