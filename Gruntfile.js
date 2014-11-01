@@ -72,7 +72,7 @@ module.exports = function(grunt) {
         phpunit: {
             options: {
                 configuration: 'tests-settings/phpunit.xml'
-            }
+            },
             bundle: {
                 dir: ''
             }
